@@ -1,0 +1,45 @@
+@import '../styles/variables.scss';
+
+.ratingContainer {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.starWrapper {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  color: #fbbf24; // Amber star color
+  
+  svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+.starEmpty {
+  color: var(--text-muted);
+}
+
+.ratingText {
+  color: var(--text-secondary);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.count {
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 0.8rem;
+}

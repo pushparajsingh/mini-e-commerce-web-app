@@ -1,0 +1,49 @@
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 1024px;
+
+$font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+$transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+$light-bg: #f8fafc;
+$light-bg-card: #ffffff;
+$light-text-primary: #0f172a;
+$light-text-secondary: #475569;
+$light-text-muted: #94a3b8;
+$light-border: #e2e8f0;
+$light-accent: #6366f1; // Premium Indigo
+$light-accent-hover: #4f46e5;
+$light-accent-glow: rgba(99, 102, 241, 0.1);
+$light-glass-bg: rgba(255, 255, 255, 0.7);
+$light-glass-border: rgba(226, 232, 240, 0.6);
+$light-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(15, 23, 42, 0.03);
+$light-shadow-hover: 0 20px 40px -15px rgba(15, 23, 42, 0.15);
+
+$dark-bg: #090a0f;
+$dark-bg-card: #131520;
+$dark-text-primary: #f8fafc;
+$dark-text-secondary: #94a3b8;
+$dark-text-muted: #64748b;
+$dark-border: #1e2235;
+$dark-accent: #818cf8; // Vibrant Indigo for dark mode
+$dark-accent-hover: #6366f1;
+$dark-accent-glow: rgba(129, 140, 248, 0.15);
+$dark-glass-bg: rgba(19, 21, 32, 0.75);
+$dark-glass-border: rgba(30, 34, 53, 0.5);
+$dark-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
+$dark-shadow-hover: 0 20px 40px -12px rgba(0, 0, 0, 0.6), 0 0 15px rgba(129, 140, 248, 0.1);
+
+$color-success: #10b981;
+$color-warning: #f59e0b;
+$color-error: #ef4444;  
+$color-sale: #f43f5e;   
+
+@mixin glass($bg, $border) {
+  background: $bg;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid $border;
+}
